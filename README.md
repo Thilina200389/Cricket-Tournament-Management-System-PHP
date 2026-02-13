@@ -40,8 +40,8 @@ CTMS PRO V3 is a comprehensive, real-time web application designed for professio
 * **Database:** MySQL (ctms_prov3.sql)
 * **Frontend:** HTML5, CSS3, JavaScript (AJAX)
 * **Data Format:** JSON (via Web Services)
-* **Asynchronous Communication: AJAX (for real-time scoreboard updates without page reloads)
-* **Multimedia Integration: HTML5 Audio API (for crowd effects and Papare music) and GIF-based animation triggers
+* **Asynchronous Communication:** AJAX (for real-time scoreboard updates without page reloads)
+* **Multimedia Integration:** HTML5 Audio API (for crowd effects and Papare music) and GIF-based animation triggers
 
 ## Installation & Setup
 1. Clone the repository into your local server (WAMP/XAMPP).
