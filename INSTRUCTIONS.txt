@@ -1,0 +1,67 @@
+System Overview & User Guide
+
+1. System Name:
+CTMS PRO V3 (Cricket Tournament Management System)
+
+2. Brief Description:
+This is a web based automated cricket scoring system developed using PHP and MySQL. It features a live scoreboard, automatic DLS (Rain Rule) calculation, realtime match simulation engine, and a secure admin panel for managing teams and players.
+
+3. Technologies Used:
+Backend: PHP, MySQL
+Frontend: HTML, CSS, JavaScript (Fetch API for AJAX)
+Server: Apache (WAMP/XAMPP)
+
+4. Default Login Credentials (For Admin Panel):
+Login URL: http://localhost/ctmsprov3/login.php
+Username: admin
+Password: 123
+
+(Alternative Login)
+Username : Thilina
+Password : Thilina
+
+5. How to Run:
+Import the provided ctms_prov3.sql file into your MySQL Database.
+Copy the project folder to the htdocs or www directory.
+Configure api/db_connect.php if necessary.
+
+Access the system via a web browser.
+Project URL: http://localhost/ctmsprov3
+
+6. Features:
+
+System & Security:
+Secure Admin Authentication - Protected login system using Username/Password verification with session-based security.
+Unauthorized Access Protection - Automatically blocks users if they attempt to access the Admin Panel without valid credentials.
+
+Team & Player Management:
+Team Registration - Facility to register new teams with a unique Team Name and Short Code (e.g., SL, IN)
+Bulk Player Registration - Ability to register multiple players to a specific team in a single batch process (using a text-based input).
+
+Live Match Management:
+Match Setup - Comprehensive interface to select competing teams, define the match title, and determine the batting team
+Conflict Prevention - Built-in validation to prevent selecting the same team for both sides (Team A vs. Team A).
+Automatic Archiving - When a new match is started, the previous match data is automatically archived to the Match History database to ensure no data is lost.
+
+Advanced Game Engine (Simulation):
+Probability-Based Simulation - A smart engine that simulates ball-by-ball outcomes (0, 1, 2, 3, 4, 6 runs, or Wickets) based on predefined probability logic.
+Real-Time Data Processing - The system processes game data in real-time using AJAX (Fetch API), updating the backend without requiring a page reload.
+
+Cricket Rules & Logic:
+Automatic Innings Switch - Detects the end of the 1st Innings (All Out or Overs completed), automatically calculates the Target Score (Runs + 1), and initiates the 2nd Innings.
+DLS Method (Rain Rule) - Features a "Force Rain" trigger that applies the Duckworth-Lewis-Stern logic to reduce the target score by a specific percentage during the 2nd Innings.
+Result Calculation - Automatically determines the match result (Win, Loss, or Tie) based on the final scores.
+
+Display & Reporting:
+Live Scoreboard - A public scoreboard that displays the current score, overs, wickets, and match status in real-time.
+Match Historyb - A dedicated section to view the records of all past matches, including scores and results.
+Data Management - Administrative options to delete specific match records or clear the entire history log.
+
+Technical Highlights:
+JSON API Architecture - All backend communications (Login, Scoring, Actions) are handled via lightweight JSON API responses.
+Responsive Dark UI - A modern, eye friendly dark themed user interface designed for easy use.
+Database Efficiency - Utilizes a normalized MySQL relational database for efficient data storage and retrieval.
+
+==========================================================================
+Developed for University Assignment - Thilina Sandakelum | 2026 January   
+==========================================================================
