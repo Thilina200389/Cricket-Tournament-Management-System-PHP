@@ -16,11 +16,23 @@ CTMS PRO V3 is a comprehensive, real-time web application designed for professio
 * **Automated Celebrations:** Integrated match summary popups with victory announcements and final statistics.
 
 ## Interface Preview
+
+### Homepage
 ![Home](screenshots/homepage.png)
+
+### Admin Console
 ![Admin Console](screenshots/admin_console.png)
+
+### Live Scoreboard
 ![Live Scoreboard](screenshots/live_scoreboard.png)
+
+### Cheerleader Animation
 ![Cheerleader Animation](screenshots/sixer.png)
+
+### Winner
 ![Winner](screenshots/celebration.png)
+
+### Match Archive
 ![Archive](screenshots/archive.png)
 
 ## Tech Stack
